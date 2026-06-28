@@ -44,6 +44,4 @@ Working with external icon libraries
 
 ⚠️ Disclaimer
 
-This project was built for educational purposes to practice front-end development skills. It is not affiliated with, endorsed by, or connected
-to Amazon.com, Inc. in any way.
-
+This project was built for educational purposes to practice front-end development skills. It is not affiliated with, endorsed by, or connected to Amazon.com, Inc. in any way.
