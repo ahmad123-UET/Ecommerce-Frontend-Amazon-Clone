@@ -12,11 +12,11 @@ grid — using only HTML and CSS, without any frameworks or libraries.
 
 Features
 
-💠 Amazon-style navigation bar (logo, delivery location, search bar, account, cart)
-💠 Category navigation panel
-💠 Hero/banner section
-💠 Responsive product category grid (Electronics, Clothes, Furniture, Beauty, Pet Care, and more)
-💠 Multi-column footer with informational links
+- Amazon-style navigation bar (logo, delivery location, search bar, account, cart)
+- Category navigation panel
+- Hero/banner section
+- Responsive product category grid (Electronics, Clothes, Furniture, Beauty, Pet Care, and more)
+- Multi-column footer with informational links
 
 
 Tech Stack 🛠️
@@ -31,7 +31,7 @@ Getting Started 🚀
 
 No installation or build tools required — just clone the repo and open index.html in your browser.
 
-🔗 Repository: github.com/ahmad123-UET/Ecommerce-Frontend-Amazon-Clone
+🔗 Repository: [github.com/ahmad123-UET/Ecommerce-Frontend-Amazon-Clone](https://github.com/ahmad123-UET/Ecommerce-Frontend-Amazon-Clone)
 
 
 Key Learnings 📚
