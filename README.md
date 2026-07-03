@@ -31,7 +31,7 @@ Getting Started 🚀
 
 No installation or build tools required — just clone the repo and open index.html in your browser.
 
-🌐 **Live Demo:** [Click here to view](https://ahmad-frontend-amazone-clone.netlify.app/)
+> 🌐 **Live Preview:** [ahmad-frontend-amazone-clone.netlify.app](https://ahmad-frontend-amazone-clone.netlify.app/)
 
 
 Key Learnings 📚
