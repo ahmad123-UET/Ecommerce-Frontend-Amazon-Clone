@@ -31,7 +31,7 @@ Getting Started 🚀
 
 No installation or build tools required — just clone the repo and open index.html in your browser.
 
-🔗 Repository: [github.com/ahmad123-UET/Ecommerce-Frontend-Amazon-Clone](https://github.com/ahmad123-UET/Ecommerce-Frontend-Amazon-Clone)
+🌐 **Live Demo:** [Click here to view](https://ahmad-frontend-amazone-clone.netlify.app/)
 
 
 Key Learnings 📚
