@@ -1,7 +1,7 @@
 * {
     margin: 0;
     font-family: Arial;
-    border: border-box;
+    box-sizing: border-box;
 }
 
 .navbar {
@@ -11,6 +11,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 10px;
 }
 
 /* For First Box */
@@ -57,14 +59,12 @@
 .add-icon {
     display: flex;
     align-items: center;
-    /* align-content: center; */
 }
 
 .add-first {
     color: #cccccc;
     font-size: 12px;
     margin-left: 20px;
-    /* margin-top: 12px; */
 }
 
 .add-second {
@@ -76,7 +76,7 @@
     display: flex;
     justify-content: space-evenly;
     background-color: pink;
-    width: 1250px;
+    width: 50%;
     height: 40px;
     border-radius: 4px;
 }
@@ -98,6 +98,7 @@
     width: 100%;
     font-size: 1rem;
     border: none;
+    padding: 0 8px;
 }
 
 .search-icon {
@@ -136,17 +137,21 @@ span {
 
 /* Panel */
 .panel {
-    height: 39px;
+    height: auto;
     background-color: #232F3E;
     color: #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     font-size: 14px;
+    flex-wrap: wrap;
+    padding: 5px 0;
 }
 
 .panel-options {
     width: 85%;
+    overflow-x: auto;
+    white-space: nowrap;
 }
 
 .panel-options p {
@@ -157,6 +162,7 @@ span {
 
 .panel-deals {
     font-weight: 700;
+    white-space: nowrap;
 }
 
 /* Hero Section*/
@@ -172,13 +178,15 @@ span {
 .hero-message {
     background-color: white;
     color: black;
-    height: 40px;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 14px;
     width: 95%;
     margin-bottom: 25px;
+    padding: 10px;
+    text-align: center;
 }
 
 .hero-message a {
@@ -191,6 +199,7 @@ span {
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #e2e7e6;
+    padding: 0 10px;
 }
 
 .box {
@@ -202,7 +211,7 @@ span {
 }
 
 .box-image {
-    height: 320px;
+    height: 280px;
     background-size: cover;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -235,9 +244,11 @@ footer {
 .foot-panel-2 {
     background-color: #232F3E;
     color: white;
-    height: 350px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    padding: 20px 10px;
 }
 
 ul {
@@ -261,10 +272,13 @@ ul p {
     background-color: #232F3E;
     color: white;
     border-top: 0.1px solid #3a4553;
-    height: 100px;
+    height: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 20px 10px;
+    gap: 10px;
 }
 
 .foot-logo {
@@ -295,9 +309,10 @@ ul p {
 .foot-panel-4 {
     background-color: #131A22;
     color: #DDDDDD;
-    height: 80px;
+    height: auto;
     font-size: 12px;
     text-align: center;
+    padding: 15px 10px;
 }
 
 .pages {
@@ -306,4 +321,133 @@ ul p {
 
 .copyright {
     padding-top: 5px;
+}
+
+/* ==========================================
+   MEDIA QUERIES - RESPONSIVE DESIGN
+   ========================================== */
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .nav-search {
+        width: 40%;
+    }
+
+    .box {
+        width: 45%;
+    }
+
+    .nav-address {
+        display: none;
+    }
+}
+
+/* Mobile Large (480px - 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        height: auto;
+        padding: 10px;
+        gap: 8px;
+        justify-content: space-between;
+    }
+
+    .nav-search {
+        width: 100%;
+        order: 3;
+    }
+
+    .nav-address {
+        display: none;
+    }
+
+    .nav-signin {
+        display: none;
+    }
+
+    .nav-return {
+        display: none;
+    }
+
+    .panel-options p {
+        font-size: 12px;
+        padding: 8px 3px;
+    }
+
+    .panel-deals {
+        display: none;
+    }
+
+    .hero-section {
+        height: 200px;
+    }
+
+    .box {
+        width: 45%;
+        height: auto;
+    }
+
+    .box-image {
+        height: 200px;
+    }
+
+    .foot-panel-2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foot-logo {
+        margin-right: 0;
+    }
+
+    .foot-panel-3 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile Small (max 480px) */
+@media (max-width: 480px) {
+    .nav-logo {
+        width: 80px;
+    }
+
+    .nav-search {
+        width: 100%;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+    }
+
+    .box-image {
+        height: 250px;
+    }
+
+    .hero-section {
+        height: 150px;
+    }
+
+    .hero-message {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    .foot-panel-2 {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    ul {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .pages {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
 }
